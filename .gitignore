@@ -2,3 +2,6 @@ node_modules/
 .idea/
 dist/
 .parcel-cache/
+.
+.heroku/node/CHANGELOG.md
+.heroku/node/README.md
