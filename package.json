@@ -2,6 +2,10 @@
   "name": "pg6301-frontend-programming",
   "version": "1.0.0",
   "main": "index.js",
+
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "dev": "concurrently npm:dev:client npm:dev:server",
     "dev:client": "cd client && npm run dev",
