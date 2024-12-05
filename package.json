@@ -14,6 +14,7 @@
     "check": "npm run check:prettier && npm test",
     "check:prettier": "prettier --check .",
     "prettier": "prettier --write .",
+    "test": "npm run test:client && npm run test:server",
     "test:client": "cd client && npm test",
     "test:server": "cd server && npm test"
   },
