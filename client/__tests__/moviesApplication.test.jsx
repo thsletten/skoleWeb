@@ -10,7 +10,7 @@ describe("movie application", () => {
       component = renderer.create(
         <MemoryRouter>
           <MoviesApplication />
-        </MemoryRouter>
+        </MemoryRouter>,
       );
     });
     expect(component.toJSON()).toMatchSnapshot();
@@ -27,7 +27,7 @@ describe("movie application", () => {
       component = renderer.create(
         <MemoryRouter initialEntries={["/movies"]}>
           <MoviesApplication fetchMovies={mockFetchMovies} />
-        </MemoryRouter>
+        </MemoryRouter>,
       );
     });
 
@@ -37,6 +37,8 @@ describe("movie application", () => {
     });
 
     expect(component.toJSON()).toMatchSnapshot();
-    expect(component.root.findByType("h2").children.join(" ")).toBe("Listing of all movies");
+    expect(component.root.findByType("h2").children.join(" ")).toBe(
+      "Listing of all movies",
+    );
   });
 });
