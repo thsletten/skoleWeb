@@ -25,7 +25,7 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": ">=16"
+    "node": "18.x"
   },
   "devDependencies": {
     "concurrently": "^8.2.1",
