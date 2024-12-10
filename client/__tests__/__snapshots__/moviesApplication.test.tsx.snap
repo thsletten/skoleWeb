@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`movie application lists movies 1`] = `
+[
+  <header>
+    <h1>
+      Kristiania movies
+    </h1>
+  </header>,
+  <nav>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Front page
+    </a>
+  </nav>,
+  <main>
+    <h2>
+      Listing of all movies
+    </h2>
+    <div>
+      Oppenheimer
+    </div>
+    <div>
+      Barbie
+    </div>
+  </main>,
+  <footer>
+    By Johannes Brodwall with 💚
+  </footer>,
+]
+`;
+
+exports[`movie application renders add movies page 1`] = `
+[
+  <header>
+    <h1>
+      Kristiania movies
+    </h1>
+  </header>,
+  <nav>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Front page
+    </a>
+  </nav>,
+  <main>
+    <form
+      onSubmit={[Function]}
+    >
+      <h2>
+        Add movie
+      </h2>
+      <div>
+        <label>
+          Title 
+          <br />
+          <input
+            autoFocus={true}
+            name="title"
+            onChange={[Function]}
+            value=""
+          />
+        </label>
+      </div>
+      <button>
+        Submit
+      </button>
+    </form>
+  </main>,
+  <footer>
+    By Johannes Brodwall with 💚
+  </footer>,
+]
+`;
+
+exports[`movie application renders front page 1`] = `
+[
+  <header>
+    <h1>
+      Kristiania movies
+    </h1>
+  </header>,
+  <nav>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Front page
+    </a>
+  </nav>,
+  <main>
+    <ul>
+      <li>
+        <a
+          href="/movies"
+          onClick={[Function]}
+        >
+          List movies
+        </a>
+      </li>
+      <li>
+        <a
+          href="/movies/new"
+          onClick={[Function]}
+        >
+          Add a movie
+        </a>
+      </li>
+    </ul>
+  </main>,
+  <footer>
+    By Johannes Brodwall with 💚
+  </footer>,
+]
+`;
