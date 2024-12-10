@@ -20,8 +20,8 @@ describe("movie application", () => {
         <MemoryRouter initialEntries={["/movies"]}>
           <MoviesApplication
             fetchMovies={async () => [
-              { id: 1, title: "Oppenheimer" },
-              { id: 2, title: "Barbie" },
+              { _id: 1, title: "Oppenheimer" },
+              { _id: 2, title: "Barbie" },
             ]}
           />
         </MemoryRouter>,
