@@ -8,7 +8,7 @@ describe("movie application", () => {
     const component = renderer.create(
       <MemoryRouter>
         <MoviesApplication fetchMovies={jest.fn()} />
-      </MemoryRouter>,
+      </MemoryRouter>
     );
     expect(component).toMatchSnapshot();
   });
@@ -24,12 +24,12 @@ describe("movie application", () => {
               { _id: 2, title: "Barbie" },
             ]}
           />
-        </MemoryRouter>,
+        </MemoryRouter>
       );
     });
     expect(component).toMatchSnapshot();
     expect(component!.root.findByType("h2").children.join(" ")).toBe(
-      "Listing of all movies",
+      "Listing of all movies"
     );
   });
 
@@ -37,14 +37,14 @@ describe("movie application", () => {
     const component = renderer.create(
       <MemoryRouter initialEntries={["/movies/new"]}>
         <MoviesApplication fetchMovies={jest.fn()} />
-      </MemoryRouter>,
+      </MemoryRouter>
     );
     expect(component).toMatchSnapshot();
     expect(component!.root.findByType("h2").children.join(" ")).toBe(
-      "Add movie",
+      "Add movie"
     );
     expect(component!.root.findByType("button").children.join(" ")).toBe(
-      "Submit",
+      "Submit"
     );
   });
 
@@ -55,7 +55,7 @@ describe("movie application", () => {
         <MoviesContext.Provider value={{ postNewMovie }}>
           <MoviesApplication fetchMovies={jest.fn()} />
         </MoviesContext.Provider>
-      </MemoryRouter>,
+      </MemoryRouter>
     );
 
     await act(async () => {

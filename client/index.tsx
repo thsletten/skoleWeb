@@ -26,5 +26,5 @@ root.render(
     <MoviesContext.Provider value={{ postNewMovie }}>
       <MoviesApplication fetchMovies={fetchMovies} />
     </MoviesContext.Provider>
-  </BrowserRouter>,
+  </BrowserRouter>
 );
